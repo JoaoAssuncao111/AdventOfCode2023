@@ -1,6 +1,5 @@
 import java.io.BufferedReader
 import java.io.FileReader
-
 fun main() {
     println(day2part1())
     println(day2part2())
@@ -36,6 +35,7 @@ fun day2part1(): Int {
 fun day2part2(): Int {
     val fileName = "inputs/day2input"
     var sum = 0
+    var text =
     BufferedReader(FileReader(fileName)).use { reader ->
         var line: String? = reader.readLine()
 
