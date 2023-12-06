@@ -24,7 +24,7 @@ fun day3part1(): Int {
             } else if ((column + 1 < matrix.size && !matrix[row][column + 1].isDigit()) || column + 1 >= matrix.size) {
                 if (!isAdjacent) isAdjacent = checkAround(row, column)
                 if (isAdjacent) {
-                    sum += if(number != 0) number * 10 + currentTile.digitToInt() else currentTile.digitToInt()
+                    sum += if (number != 0) number * 10 + currentTile.digitToInt() else currentTile.digitToInt()
                 }
                 isAdjacent = false
                 number = 0
@@ -35,10 +35,9 @@ fun day3part1(): Int {
     return sum
 }
 
-fun day3part2(): Int {
-    var result = 0
-    return result
-}
+//fun day3part2(): Int {}
+
+
 
 fun checkAround(row: Int, col: Int): Boolean {
     for (i in -1..1) {
@@ -50,6 +49,11 @@ fun checkAround(row: Int, col: Int): Boolean {
     }
     return false
 }
+
+
+
+
+
 
 fun fillMatrix() {
     val fileName = "inputs/day3input"

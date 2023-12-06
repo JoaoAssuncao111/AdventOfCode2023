@@ -35,7 +35,6 @@ fun day2part1(): Int {
 fun day2part2(): Int {
     val fileName = "inputs/day2input"
     var sum = 0
-    var text =
     BufferedReader(FileReader(fileName)).use { reader ->
         var line: String? = reader.readLine()
 
